@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <!--Bootstrap links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--Own CSS and JavaScript-->
+    <link href="Daily Mart NZ/PROJECT/css/stylesheet.css" rel="stylesheet" />
+    <script src="Daily Mart NZ/PROJECT/javascript/Formatting.js"></script>
+    <script src="Daily Mart NZ/PROJECT/javascript/Validation.js"></script>
+
+    <script src="Banner.js"></script>
+    <!----------Website Icon--------------------->
+    <link rel="icon" href="images/HeadersAndLogo/logo-icon-only.png" type="image/png.">
+
+</head>
+<body>
+    <!---------------------------Header starts here-------------------------------->
+    <main-menu></main-menu>
+
+
+    <!--------------------------Carousel------------------------------------------->
+    <section id="banner-header">
+        <div id="header_carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#header_carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header_carousel" data-slide-to="1"></li>
+                <li data-target="#header_carousel" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-----first carousel---------->
+                    <div class="carousel-item active" id="carousel1">
+                        <div class="carousel-caption">
+                            <p class="carousel-header-caption">Pay <span style="color:green;">Less,</span> Buy <span style="color:green;">More</span></p>
+                            <p class="carousel-inner-caption">Daily Mart NZ offers you a wide range of essential products, fruits, and vegetables all ready to be purchased in one click.  </p>
+
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchItem">
+                                <button type="submit" class="btn btn-warning" onclick="showSearch()"> <i class="fa fa-search"></i> Search </button>
+
+                                <p style="padding-top:20px;">
+                                    Shop now
+                                    <span><a class="btn btn-success" href="SignUp.html" role="button" data-toggle="modal" data-target="#addMyModal">Sign Up Now!</a></span>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <!------second carousel------------>
+                    <div class="carousel-item" id="carousel2">
+                        <div class="carousel-caption">
+                            <p class="carousel-header-caption">Shop <span style="color:green;">Now</span></p>
+                            <p class="carousel-inner-caption">Come at our shop or do your online grocery shopping here.  </p>
+                        </div>
+                    </div>
+                    <!-------third carousel ----------->
+                    <div class="carousel-item" id="carousel3">
+                        <div class="carousel-caption">
+                            <p class="carousel-header-caption">Don't miss out on our <span style="color:green;">good deals !</span></p>
+                            <p class="carousel-inner-caption">Here at Daily Mart NZ, we only provide you with the best prices for your everyday needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#header_carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#header_carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        
+    </section>
+
+
+
+    <!-----------------------category------------------------------------>
+    <section id="category ">
+      
+        <div class="container category-container">
+            <div class="title top_picks_title text-center">
+                <h2>OUR PRODUCTS</h2>
+            </div>
+        </div>
+        <!-----------category cards--------------------->
+        <div class="container home-category ">
+            <div class="row">
+                <div class="col-md-4 py-3 category-column">
+                    <div class="card text-center">
+                        <img src="images/Category/category-essential.jpg"  class="card-img-top" alt="Essentials Category Pic" />
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">Find your favourite essential products here. We are also now selling facemasks and sanitisers.</p>
+                            <a href="Essentials.html" class="btn btn-success btn-sm">Shop Now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 category-column">
+                    <div class="card text-center">
+                        <img src="images/Category/category-fruit.jpg" class="card-img-top" alt="Fruits Category Pic" />
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits</h5>
+                            <p class="card-text">Browse through our selection of daily delivered fresh fruits from the local farmers all over Auckland.</p>
+                            <a href="Fruits.html" class="btn btn-success btn-sm">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 category-column">
+                    <div class="card text-center">
+                        <img src="images/Category/category-veg.jpg" class="card-img-top" alt="Vegetables Category Pic" />
+                        <div class="card-body">
+                            <h5 class="card-title">Vegetables</h5>
+                            <p class="card-text">Browse through our wide range of healthy vegetable choices  fit for your everyday meals.</p>
+                            <a href="Vegetables.html" class="btn btn-success btn-sm">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br />
+    <br />
+
+    <!-------------------------top picks section------------------->
+    <section id="picks">
+        <div class="jumbotron bg-transparent">
+            <div class="container rounded top_picks">
+                <div class="top_picks_title">
+                    <h1>TOP PICKS</h1>
+                </div>
+
+                <div class="container">
+                    <!-----first row----------->
+                    <div class="row pt-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4 ">
+                            <a href="Essentials.html"><img src="images/Essentials/facemask.png" class="img-fluid" alt="facemask" /></a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                            <a href="Essentials.html"><img src="images/Essentials/sanitiser.png" class="img-fluid" alt="sanitiser" /></a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                            <a href="Essentials.html"><img src="images/Essentials/eggs.png" class="img-fluid" alt="eggs" /></a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                            <a href="Essentials.html"><img src="images/Essentials/bread.png" class="img-fluid" alt="bread" /></a>
+                        </div>
+                    </div>
+                    <!---second row-->
+                    <div class="row pt-3 ">
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                            <a href="Fruits.html"><img src="images/Fruits/apple.png" class="img-fluid" alt="apple" /></a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                            <a href="Fruits.html"> <img src="images/Fruits/mango.png" class="img-fluid" alt="mango" /></a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                            <a href="Vegetables.html"><img src="images/Vegetables/cabbage.png" class="img-fluid" alt="cabbage" /></a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                            <a href="Vegetables.html"><img src="images/Vegetables/pumpkin.png" class="img-fluid" alt="pumpkin" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------why choose us section----------------->
+
+    <section id="home_bottom_text">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe id="homevid" width="450" height="315" src="https://www.youtube.com/embed/cB8v1DrhyNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+               
+                <div class="col-lg-6 text-justify">
+                    <!--------Canvas Animation----------------------->
+                    <div class="canvas-container text-center ">
+                        <canvas id="whyChoose" width="460" height="90">Your browser does not support canvas</canvas>
+                    </div>
+                    <!---------js for why choose us text------------------->
+
+                    <script src="Daily Mart NZ/PROJECT/javascript/CanvasHome.js"></script>
+
+                    <p>Daily Mart NZ started as a small store created to support and sustain a steady market for a small amount of local farmers to sell their crops. Now we are partnered with over 50 local farmers all over Auckland, ready to provide you with the freshest fruits, vegetables, milk, eggs, and more. </p>
+                    <a href="GroceryList.html" class="btn btn-success btn-sm">Add your shopping list here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------------------Footer---------------------------------->
+    <main-footer></main-footer>
+
+
+    <!---------------------Modal for Sign Up-------------------------------------->
+
+    <div class="modal fade" id="addMyModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title " style="color:green;">Register Now</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-----------displays error message at the top centre----------------->
+                    <div id="error_message2" style="text-align:center; color:red;">
+
+
+                    </div>
+
+                    <!-----------------Form---------------------------------->
+                    <form role="form" id="newModalForm" name="newModalForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name" required />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name" required />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender"> Gender</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="option1">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="option2">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+
+                        <div class="row pt-3">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="memail">Email address</label>
+                                    <input type="email" class="form-control" id="memail" name="memail" aria-describedby="emailHelp" placeholder="Enter email" required>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="mpassword">Password</label>
+                                    <input type="password" class="form-control" id="mpassword" name="mpassword" placeholder="Enter password" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Enter address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="mphone" name="mphone" placeholder="Enter phone number" required />
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="checkBox" name="checkBox">
+                            <label class="form-check-label" for="checkBox"> I agree with the<span style="text-decoration:underline; color:blue;"> Terms and Conditions</span></label>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success" id="submit" onclick="return validateModal()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
